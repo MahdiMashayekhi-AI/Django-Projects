@@ -10,4 +10,4 @@ def authors_list(request):
         'authors': authors,
     }
 
-    return render(request, 'books_list.html', context)
+    return render(request, 'authors_list.html', context)
