@@ -1,20 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BookStore Website!</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>My Bookstore | Mahdi Mashayekhi</title>
+  <!-- include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  
-  <h1>Welcome to this site!</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, labore? Debitis aliquam beatae ratione provident officiis et obcaecati, asperiores culpa minus at distinctio rem id aliquid dolor deserunt nam tempore?
-  </p>
+<body class="bg-gray-100">
 
-  <a href="/authors/">Authors</a>
-  <a href="/books/">Books</a>
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex-shrink-0">
+          <a href="https://mahdimashayekhi.ir" class="inline-flex items-center">
+            <img src="https://mahdimashayekhi.ir/assets/images/MahdiMashayekhi.png" alt="My Bookstore Logo" class="h-12 w-12"/>
+            <span class="text-xl font-bold text-gray-800 ml-2">My Bookstore</span>
+          </a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="/" class="text-gray-800 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="/books" class="text-gray-800 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Books</a>
+            <a href="/authors" class="text-gray-800 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Authors</a>
+            <a href="https://github.com/MahdiMashayekhi-AI" class="text-gray-800 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Git Hub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold text-gray-900">Welcome to My Bookstore</h1>
+      <p class="mt-2 text-gray-600">Browse and purchase from our selection of the latest books.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for book in books %}
+          <div class="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="bg-gray-200 h-48 w-full flex-shrink-0"></div>
+            <div class="flex-1 p-4">
+              <h3 class="font-medium text-gray-900 mb-2">The Midnight Library</h3>
+              <p class="text-gray-600 text-sm">By Matt Haig</p>
+              <p class="mt-2 text-gray-500 text-sm">Nora Seed finds herself faced with the possibility of changing her life for a new one, following a different career, undoing old breakups, or realizing her dreams of becoming a glaciologist, she must search within herself as she travels through the Midnight Library to decide what is truly fulfilling in life.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <p class="text-gray-700 font-bold">$14.99</p>
+                <a href="/books/1" class="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">View Details</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </main>
 
 </body>
 </html>

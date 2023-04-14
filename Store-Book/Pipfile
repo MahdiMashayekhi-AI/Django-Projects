@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 django = "*"
 mysqlclient = "*"
+pillow = "*"
+coala = "*"
+coala-bears = "*"
 
 [dev-packages]
 

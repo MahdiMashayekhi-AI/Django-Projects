@@ -5,18 +5,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Books</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
-  <h1>Books is here</h1>
-
-  <ul>
-  {% for book in books %}
-    <li>{{ book }}</li>
-  {% endfor %}
-  </ul>
   
-  <a href="/">Home</a>
-  
+<main class="container mx-auto py-10">
+  <div class="max-w-md mx-auto">
+    <h1 class="text-3xl font-bold mb-4">Book List</h1>
+    <div class="bg-white shadow-lg overflow-hidden rounded-lg">
+      <ul>
+        {% for book in books %}
+        <li class="border-b border-gray-200 px-4 py-5 sm:px-6">
+          <div class="flex items-center justify-between">
+            <a href="{% url 'books_detail' book.id %}" class="text-lg leading-6 font-medium text-gray-900 hover:text-gray-700">
+              {{ book.title }}
+            </a>
+            <span class="text-sm leading-5 text-gray-500">
+              {{ book.authors }}
+            </span>
+          </div>
+          <div class="mt-2 sm:flex sm:justify-between">
+            <div class="sm:flex">
+              <div class="mr-6 flex items-center text-sm leading-5 text-gray-500">
+                <svg viewBox="0 0 20 20" fill="currentColor" class="clock w-4 h-4 mr-1">
+                  <path fill-rule="evenodd" d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm.5 13.2V10l3.75-2.25.95 1.56L11 11v4.2h-.5z" clip-rule="evenodd" />
+                </svg>
+                <span>Published {{ book.published }}</span>
+              </div>
+              <div class="flex items-center text-sm leading-5 text-gray-500">
+                <svg viewBox="0 0 20 20" fill="currentColor" class="star w-4 h-4 mr-1">
+                  <path fill-rule="evenodd" d="M10 14.15l3.87 2.28-.93-4.68L18 8.85l-4.77-.41L10 4 6.77 8.44 2 8.85l4.06 3.9-.93 4.68L10 14.15z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="flex justify-center mt-6 mx-auto my-5">
+        <a href="/" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Home</a>
+      </div>
+    </div>
+  </div>
+</main>
 </body>
 </html>
