@@ -1,0 +1,19 @@
+{% extends 'tasks/base/base.html' %}
+
+{% block title %}To Do Detail{% endblock %}
+{% block content %}
+
+<div class="container d-flex justify-content-center mt-5">
+    <div class="w-50 h-100 p-5 text-bg-dark rounded-3 mt-5">
+        <h2>{{ todo.title }}</h2>
+        <hr>
+        <p style="text-align: justify" class="mb-5">{{ todo.body }}</p>
+        <small>Created in : {{ todo.created | timesince }}</small>
+        <br><br>
+        <a href="{% url 'tasks' %}" class="btn btn-light">Tasks</a>
+        <a href="{% url 'delete' todo.id  %}" class="btn btn-danger">Delete</a>
+        <a href="{% url 'update' todo.id  %}" class="btn btn-primary">Update</a>
+    </div>
+</div>
+
+{% endblock %}

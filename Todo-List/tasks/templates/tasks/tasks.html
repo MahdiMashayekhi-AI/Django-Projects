@@ -1,0 +1,53 @@
+{% extends 'tasks/base/base.html' %}
+
+{% block title %}To Do List{% endblock %}
+{% block content %}
+
+<div class="container py-5">
+<h1 class="text-center my-3 pb-3">Todo List</h1>
+<div class="row d-flex justify-content-center align-items-center">
+  <div class="col col-lg-9 col-xl-7">
+    <div class="card rounded-3">
+      <div class="card-body p-4 text-center">
+          <a href="/create/" class="btn btn-dark m-4">Add a Todo</a>
+        <table class="table mb-4">
+          <thead>
+            <tr>
+              <th scope="col">Row</th>
+              <th scope="col">Todo item</th>
+              <th scope="col">Status</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for todo in todos %}
+            <tr>
+              <th scope="row">{{ forloop.counter }}</th>
+              <td><a href="{% url 'detail' todo.id %}">{{ todo.title | truncatechars:25 }}</a></td>
+              <td>
+                  {% if todo.status == 0%}
+                      Finished
+                  {% elif todo.status == 1 %}
+                      In progress
+                  {% endif %}
+              </td>
+              <td>
+                <a href="{% url 'delete' todo.id %}" class="btn btn-danger">Delete</a>
+
+                  {% if todo.status == 1%}
+                    <a href="{% url 'finished' todo.id %}" class="btn btn-success ms-1">Finished</a>
+                  {% endif %}
+
+              </td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock %}
