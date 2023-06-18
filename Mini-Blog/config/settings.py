@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'compressor',
     # My Installed Apps:
     'web.apps.WebConfig',
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
