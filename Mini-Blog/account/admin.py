@@ -1,4 +1,6 @@
 from django.contrib import admin
+from django.utils.html import format_html
+from django.templatetags.static import static
 from . import models
 
 # Register your models here.
@@ -42,8 +44,18 @@ class AccountAdmin(admin.ModelAdmin):
         'last_name',
         'is_staff',
         'is_active',
-        ]
+    ]
     list_per_page = 50
 
+    @staticmethod
+    def display_image(obj):
+        if obj.image:
+            return format_html('<img src="{}" width="35" height="35" />', obj.image.url)
+        else:
+            default_avatar = static('src/images/avatars/avatar_default.png')
+            return format_html('<img src="{}" width="35" height="35" />', default_avatar)
+
+
+    display_image.short_description = 'Image'
 
 admin.site.register(models.Account, AccountAdmin)
