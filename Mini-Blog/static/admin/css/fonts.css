@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Estedad";
+    src: url("../fonts/Estedad/9e151e6921f4d7f05bda761ad8861fb85fa2d392edacc683527f660cd374c72b.woff2") format('woff2');
+    src: url("../fonts/Estedad/9e151e6921f4d7f05bda761ad8861fb85fa2d392edacc683527f660cd374c72b.woff") format('woff'),
+         url("../fonts/Estedad/9e151e6921f4d7f05bda761ad8861fb85fa2d392edacc683527f660cd374c72b.ttf") format('truetype'),
+         url("../fonts/Estedad/9e151e6921f4d7f05bda761ad8861fb85fa2d392edacc683527f660cd374c72b.otf") format('otf');
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Estedad";
+    src: url("../fonts/Estedad/d5a78e10f9bad2c3a36ba3ac23547b4a051ced4c6fb992bff23dadb3f1650dbd.woff2") format('woff2');
+    src: url("../fonts/Estedad/d5a78e10f9bad2c3a36ba3ac23547b4a051ced4c6fb992bff23dadb3f1650dbd.woff") format('woff'),
+         url("../fonts/Estedad/d5a78e10f9bad2c3a36ba3ac23547b4a051ced4c6fb992bff23dadb3f1650dbd.ttf") format('truetype'),
+         url("../fonts/Estedad/d5a78e10f9bad2c3a36ba3ac23547b4a051ced4c6fb992bff23dadb3f1650dbd.otf") format('otf');
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Estedad";
+    src: url("../fonts/Estedad/4c6ab7760af82ef9f91b4a5a92d1e81083b6b6e99d51f789c90a024d28fec42e.woff2") format('woff2');
+    src: url("../fonts/Estedad/4c6ab7760af82ef9f91b4a5a92d1e81083b6b6e99d51f789c90a024d28fec42e.woff") format('woff'),
+         url("../fonts/Estedad/4c6ab7760af82ef9f91b4a5a92d1e81083b6b6e99d51f789c90a024d28fec42e.ttf") format('truetype'),
+         url("../fonts/Estedad/4c6ab7760af82ef9f91b4a5a92d1e81083b6b6e99d51f789c90a024d28fec42e.otf") format('otf');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Estedad";
+    src: url("../fonts/Estedad/4cfe6e00e24c8853f545011a2e2c39604c0322b3193abe927127211e02fd2d03.woff2") format('woff2');
+    src: url("../fonts/Estedad/4cfe6e00e24c8853f545011a2e2c39604c0322b3193abe927127211e02fd2d03.woff") format('woff'),
+         url("../fonts/Estedad/4cfe6e00e24c8853f545011a2e2c39604c0322b3193abe927127211e02fd2d03.ttf") format('truetype'),
+         url("../fonts/Estedad/4cfe6e00e24c8853f545011a2e2c39604c0322b3193abe927127211e02fd2d03.otf") format('otf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Estedad";
+    src: url("../fonts/Estedad/59ae9738177074c7a2cd924ed5589e8043c0cd5330b859f3b00d52b48af4ff69.woff2") format('woff2');
+    src: url("../fonts/Estedad/59ae9738177074c7a2cd924ed5589e8043c0cd5330b859f3b00d52b48af4ff69.woff") format('woff'),
+         url("../fonts/Estedad/59ae9738177074c7a2cd924ed5589e8043c0cd5330b859f3b00d52b48af4ff69.ttf") format('truetype'),
+         url("../fonts/Estedad/59ae9738177074c7a2cd924ed5589e8043c0cd5330b859f3b00d52b48af4ff69.otf") format('otf');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Estedad";
+    src: url("../fonts/Estedad/4705f26c49e1d402dc34b88f294b142b855fbc030fb776f92a45d7dfd4106fa4.woff2") format('woff2');
+    src: url("../fonts/Estedad/4705f26c49e1d402dc34b88f294b142b855fbc030fb776f92a45d7dfd4106fa4.woff") format('woff'),
+         url("../fonts/Estedad/4705f26c49e1d402dc34b88f294b142b855fbc030fb776f92a45d7dfd4106fa4.ttf") format('truetype'),
+         url("../fonts/Estedad/4705f26c49e1d402dc34b88f294b142b855fbc030fb776f92a45d7dfd4106fa4.otf") format('otf');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Estedad";
+    src: url("../fonts/Estedad/51681de94ab9b51696bb853004f7d6e6f9487d1652640f515caba5a82feb447c.woff2") format('woff2');
+    src: url("../fonts/Estedad/51681de94ab9b51696bb853004f7d6e6f9487d1652640f515caba5a82feb447c.woff") format('woff'),
+         url("../fonts/Estedad/51681de94ab9b51696bb853004f7d6e6f9487d1652640f515caba5a82feb447c.ttf") format('truetype'),
+         url("../fonts/Estedad/51681de94ab9b51696bb853004f7d6e6f9487d1652640f515caba5a82feb447c.otf") format('otf');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Estedad";
+    src: url("../fonts/Estedad/40211372e6e9ddf3392c8d465a667c66e9f512451c1b9fe703574d8d1975ecba.woff2") format('woff2');
+    src: url("../fonts/Estedad/40211372e6e9ddf3392c8d465a667c66e9f512451c1b9fe703574d8d1975ecba.woff") format('woff'),
+         url("../fonts/Estedad/40211372e6e9ddf3392c8d465a667c66e9f512451c1b9fe703574d8d1975ecba.ttf") format('truetype'),
+         url("../fonts/Estedad/40211372e6e9ddf3392c8d465a667c66e9f512451c1b9fe703574d8d1975ecba.otf") format('otf');
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Estedad";
+    src: url("../fonts/Estedad/357e78e89cb805f75f51e6f08179b33a7b634fff99cc47719fd1a721ea19315e.woff2") format('woff2');
+    src: url("../fonts/Estedad/357e78e89cb805f75f51e6f08179b33a7b634fff99cc47719fd1a721ea19315e.woff") format('woff'),
+         url("../fonts/Estedad/357e78e89cb805f75f51e6f08179b33a7b634fff99cc47719fd1a721ea19315e.ttf") format('truetype'),
+         url("../fonts/Estedad/357e78e89cb805f75f51e6f08179b33a7b634fff99cc47719fd1a721ea19315e.otf") format('otf');
+    font-weight: 900;
+    font-style: normal;
+  }
