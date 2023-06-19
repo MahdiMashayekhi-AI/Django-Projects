@@ -1,0 +1,17 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}وبلاگ جنگو{% endblock title %}
+{% block content %}
+{% if user.is_authenticated %}
+    <h1>به وبلاگ خوش آمدید!</h1>
+    <h2>پست‌های اخیر:</h2>
+    <ul>
+        {% for post in recent_posts %}
+            <li>{{ post.title }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h1>لطفاً وارد سایت شوید!</h1>
+{% endif %}
+{% endblock %}

@@ -7,6 +7,13 @@ name = "pypi"
 django = "*"
 django-compressor = "*"
 pillow = "*"
+django-autoslug = "*"
+django-taggit = "*"
+django-admin-interface = "*"
+django-adminlte2 = "*"
+django-jazzmin = "*"
+django-adminlte-3 = "*"
+jdatetime = "*"
 
 [dev-packages]
 

@@ -18,10 +18,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-from web import urls
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('web.urls')),
+    path('', include('article.urls')),
+    path('', include('sitemap.urls')),
 ]
 
 if settings.DEBUG:

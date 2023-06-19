@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}ورود{% endblock title %}
+{% block content %}
+<h1>ورود به سایت</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">ورود</button>
+</form>
+{% endblock content %}
