@@ -2,7 +2,7 @@
 
 [![Build status](https://gitlab.com/thorgate-public/django-project-template/badges/master/pipeline.svg)](https://gitlab.com/thorgate-public/django-project-template/commits/master)
 
-[Django](https://www.djangoproject.com/) project template that we use at [Thorgate](https://thorgate.eu).
+[Django](https://www.djangoproject.com/) Projects Repository is a collection of open-source projects built with Django, showcasing best practices and use cases for web app development. It's a great resource for learning and inspiration.
 
 Best suited for medium-sized and bigger apps that use JavaScript and React for frontend or single page web applications.
 
